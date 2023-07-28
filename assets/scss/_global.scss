@@ -1,0 +1,161 @@
+// Global component styles
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
+// Main page wrapper
+#wrapper {
+  display: flex;
+  #content-wrapper {
+    background-color: $gray-100;
+    width: 100%;
+    overflow-x: hidden;
+    #content {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+// Set container padding to match gutter width instead of default 15px
+.container,
+.container-fluid {
+  padding: 0.5rem 1rem;
+}
+
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: $white;
+  background: fade-out($gray-800, .5);
+  line-height: 46px;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  i {
+    font-weight: 800;
+  }
+}
+
+.start-100 {
+  left: 100%!important;
+}
+.translate-middle {
+  transform: translate(-50%,-50%)!important;
+}
+.fs-6 {
+  font-size: 1rem!important;
+}
+.fw-600{
+  font-weight: 600 !important;
+}
+.light-bg-shade{
+  background-color: $light-bg-shade; 
+}
+.gap-2 {
+  gap: 0.5rem!important;
+}
+.progress-scroll{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 5;
+}
+.calendar-box{
+  background-color: $gray-800;
+  color: $white;
+  border-radius: $border-radius;
+  text-align: center;
+  line-height: 22px;
+  padding: 5px;
+  height: 100%;
+  min-height: 60px;
+  display: flex;
+}
+.organization-box{
+  display: flex;
+  background-color: $gray-200;
+  border-radius: $border-radius;
+  text-align: center;
+  line-height: 22px;
+  padding: 5px;
+  height: 100%;
+  min-height: 60px;
+  position: relative;
+  img{
+    width: 90%
+  }
+
+}
+
+.offcanvas-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000d4;
+  display: none;
+}
+
+
+
+.sidecanvas {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidecanvas a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidecanvas a:hover {
+  color: #f1f1f1;
+}
+
+.sidecanvas .closebtn {
+  position: absolute;
+  top: 0;
+  left: -13px;
+  font-size: 36px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidecanvas {padding-top: 15px;}
+  .sidecanvas a {font-size: 18px;}
+}

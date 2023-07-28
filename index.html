@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fin Machine Test</title>
+    <script src="https://kit.fontawesome.com/d09d7b2372.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+  
+    <link href="assets/scss/styles.css" rel="stylesheet">
+
+</head>
+<body id="page-top">
+    <div id="wrapper">
+        <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon ">
+                    <img src="./assets/images/logo-tab.png" alt="">
+                </div>
+                <div class="sidebar-brand-text mx-3 text-light">SIDE SHEET <br><span class="fs-5">Tag line</span></div>
+            </a>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <img src="./assets/images/dashboaerd-icon.png" class="mr-1" alt="">
+                    
+                    <span>Dashboard</span></a>
+            </li>
+
+          
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMarketing"
+                    aria-expanded="true" aria-controls="collapseMarketing">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Marketing</span>
+                </a>
+                <div id="collapseMarketing" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+                        <a class="collapse-item" href="#">link</a>
+                        <a class="collapse-item" href="#">link</a>
+                    </div>
+                </div>
+            </li>
+
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClassifieds"
+                    aria-expanded="true" aria-controls="collapseClassifieds">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Classifieds</span>
+                </a>
+                <div id="collapseClassifieds" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+                        <a class="collapse-item" href="#">link</a>
+                        <a class="collapse-item" href="#">link</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Quotes</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSupport"
+                    aria-expanded="true" aria-controls="collapseSupport">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Support</span>
+                </a>
+                <div id="collapseSupport" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+                        <a class="collapse-item" href="#">link</a>
+                        <a class="collapse-item" href="#">link</a>
+                    </div>
+                </div>
+            </li>
+
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseConfiguration"
+                    aria-expanded="true" aria-controls="collapseConfiguration">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Configuration</span>
+                </a>
+                <div id="collapseConfiguration" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+                        <a class="collapse-item" href="#">link</a>
+                        <a class="collapse-item" href="#">link</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item d-block position-relative ">
+
+
+                <button class="rounded-circle  border-0 position-absolute start-100 translate-middle"
+                    id="sidebarToggle"></button>
+
+            </li>
+           
+
+        </ul>
+        
+
+        
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div>
+                <nav class="navbar navbar-expand navbar-light  topbar  static-top ">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <h4 class="mt-2">Dashboard <br><small class="fs-6 text-muted">Dashboard</small></h4>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn-light btn btn-circle btn-sm"><i
+                                        class="fas fa-bell fa-fw"></i></button>
+                                
+                                <span class="badge badge-danger badge-counter">1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-black" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded"
+                                    src="./assets/images/business-man-curly-cute-handsome-guy-black-suit-close-up-smiling 1.png">
+                                <span class="ml-2 d-none d-lg-inline small">Douglas McGee <br>
+                                    <span class="text-muted">Admin</span>
+                                </span>
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm  mr-2 "></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 "></i>
+                                    Settings
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <div class="container-fluid ">
+                    
+                    <div class="bg-white p-3 rounded shadow-sm">
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <div class="p-1 border rounded">
+                                <ul class="nav nav-pills  ">
+                                    <li class="nav-item ">
+                                        <a class="nav-link active" data-toggle="tab" href="#home">Miscellaneous</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" data-toggle="tab" href="#menu1">Quotes</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <a href="#" class="d-none d-sm-inline-block btn btn-primary shadow-sm" onclick="openNav()"> Create New
+                                Quote</a>
+                        </div>
+                        <div class="offcanvas-backdrop "></div>
+                        <div id="main">
+                          </div>
+                          <div id="mySidenav" class="sidecanvas">
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="javascript:void(0)" class="btn btn-circle  " onclick="closeNav()">&times;</a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="col">
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-6 col-md-12">
+                                                <label for="">Calculator</label>
+                                                <select type="select" class="form-control" id="">
+                                                    <option value="">Dealer FMV Calculator</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-12">
+                                                <label for="">Purchase Options</label>
+                                                <select type="select" class="form-control" id="">
+                                                    <option value="">FMV Purchase Option</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-12">
+                                                <label for="">Lease Terms</label>
+                                                <select type="select" class="form-control" id="">
+                                                    <option value="">24 months, 12 months,6..</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-12">
+                                                <label for="">Advance Rental</label>
+                                                <select type="select" class="form-control" id="">
+                                                    <option value=""> 2 Advance Rentals, 0 Ad..</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-12">
+                                                <label for="">Lease Terms</label>
+                                                <select type="select" class="form-control" id="">
+                                                    <option value="">24 months, 12 months,6..</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-12">
+                                                <label for="">Advance Rental</label>
+                                                <select type="select" class="form-control" id="">
+                                                    <option value=""> 2 Advance Rentals, 0 Ad..</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-12">
+                                                <label for="">Lease Terms</label>
+                                                <select type="select" class="form-control" id="">
+                                                    <option value="">24 months, 12 months,6..</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-12">
+                                                <label for="">Advance Rental</label>
+                                                <select type="select" class="form-control" id="">
+                                                    <option value=""> 2 Advance Rentals, 0 Ad..</option>
+                                                </select>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <button class="btn btn-link text-dark mr-md-2" onclick="closeNav()" type="button">Cancel</button>
+                                            
+                                            <button class="btn btn-primary" type="button">Create New Quote</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                                
+                            
+                          </div>
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div class="accordion  mb-3" id="accordionExample">
+                                    <div class="card light-bg-shade">
+                                        <div
+                                            class="card-header d-flex flex-row align-items-center justify-content-between">
+                                            <h4 class="mb-0 mt-3 ">
+                                                <button
+                                                    class="btn btn-link text-black text-decoration-none btn-block text-left pl-0  fw-600"
+                                                    type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Quick Calculator
+                                                </button>
+                                            </h4>
+                                            <div>
+                                                <a class=" btn btn-light  btn-circle btn-sm" href="#" role="button"
+                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-body py-3">
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                                data-parent="#accordionExample">
+
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-lg-3 col-md-6">
+                                                            <label for="">Calculator</label>
+                                                            <select type="select" class="form-control" id="">
+                                                                <option value="">Dealer FMV Calculator</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-lg-3 col-md-6">
+                                                            <label for="">Purchase Options</label>
+                                                            <select type="select" class="form-control" id="">
+                                                                <option value="">FMV Purchase Option</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-lg-3 col-md-6">
+                                                            <label for="">Lease Terms</label>
+                                                            <select type="select" class="form-control" id="">
+                                                                <option value="">24 months, 12 months,6..</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-lg-3 col-md-6">
+                                                            <label for="">Advance Rental</label>
+                                                            <select type="select" class="form-control" id="">
+                                                                <option value=""> 2 Advance Rentals, 0 Ad..</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-lg-9 col-md-6">
+                                                            <label for="">What is your sale total?</label>
+                                                            <div class="progress" style="height: 8px;" >
+                                                                <div class="progress-bar position-relative"
+                                                                    role="progressbar" style="width: 25%;"
+                                                                    aria-valuenow="25" aria-valuemin="0"
+                                                                    aria-valuemax="100">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-lg-3 col-md-6">
+                                                            <label for="">&nbsp;</label>
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text"
+                                                                        id="inputGroup-sizing-default">
+                                                                        <i class="fa-solid fa-dollar-sign"></i>
+                                                                    </span>
+                                                                </div>
+                                                                <input type="text" value="60,000" class="form-control"
+                                                                    aria-label="Sizing example input"
+                                                                    aria-describedby="inputGroup-sizing-default">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                        <button class="btn btn-link text-dark mr-md-2"
+                                                            type="button">Cancel</button>
+                                                        <button class="btn btn-link text-info mr-md-2"
+                                                            type="button">Reset</button>
+                                                        <button class="btn btn-outline-primary"
+                                                            type="button">Apply</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class=" col-md-4 mb-4">
+                                <div class="card  shadow h-100 ">
+                                    <div class="card-body">
+
+                                        <img src="./assets/images/Image1.png" alt="" class="w-100 mb-3">
+
+                                        <div class="row">
+                                            <div class="col mr-2">
+                                                <div class="h5">3 Bedrooms in Cairo</div>
+                                                <div class=" font-weight-bold text-primary text-uppercase mb-3">
+                                                    $7,625</div>
+                                                <div class="d-flex">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-circle btn-sm btn-light bg-gray-200 font-weight-normal "><i
+                                                                class="fa-solid fa-car"></i></button>
+                                                        <button
+                                                            class="btn btn-link btn-sm pl-1 font-weight-normal"><label
+                                                                for="">3 Bed</label></button>
+                                                    </div>
+                                                    <div class="ml-3 d-flex">
+                                                        <button
+                                                            class="btn btn-circle btn-sm btn-light bg-gray-200 font-weight-normal"><i
+                                                                class="fa-solid fa-car"></i></button>
+                                                        <button
+                                                            class="btn btn-link btn-sm pl-1 font-weight-normal"><label
+                                                                for="">1 Bathroom</label></button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card shadow h-100 ">
+                                    <div class="card-body">
+                                        <img src="./assets/images/Image2.png" alt="" class="w-100 mb-3">
+                                        <div class="row">
+                                            <div class="col mr-2">
+                                                <div class="h5">4 Bedrooms in Los Angel</div>
+                                                <div class=" font-weight-bold text-primary text-uppercase mb-3">
+                                                    $8,625</div>
+                                                <div class="d-flex">
+                                                    <div class="d-flex">
+                                                        <button class="btn btn-circle btn-sm btn-light bg-gray-200 "><i
+                                                                class="fa-solid fa-car"></i></button>
+                                                        <button
+                                                            class="btn btn-link btn-sm pl-1 font-weight-normal"><label
+                                                                for="">3 Bed</label></button>
+                                                    </div>
+                                                    <div class="ml-3 d-flex">
+                                                        <button class="btn btn-circle btn-sm btn-light bg-gray-200"><i
+                                                                class="fa-solid fa-car"></i></button>
+                                                        <button
+                                                            class="btn btn-link btn-sm pl-1 font-weight-normal"><label
+                                                                for="">1 Bathroom</label></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card  shadow h-100 ">
+                                    <div class="card-body">
+
+                                        <img src="./assets/images/Image3.png" alt="" class="w-100 mb-3">
+
+                                        <div class="row">
+                                            <div class="col mr-2">
+                                                <div class="h5">3 Bedrooms in Hotel abab</div>
+                                                <div class="text-md font-weight-bold text-primary text-uppercase mb-3">
+                                                    $7,625</div>
+                                                <div class="d-flex">
+                                                    <div class="d-flex">
+                                                        <button class="btn btn-circle btn-sm btn-light bg-gray-200 "><i
+                                                                class="fa-solid fa-car"></i></button>
+                                                        <button
+                                                            class="btn btn-link btn-sm pl-1 font-weight-normal"><label
+                                                                for="">3 Bed</label></button>
+                                                    </div>
+                                                    <div class="ml-3 d-flex">
+                                                        <button class="btn btn-circle btn-sm btn-light bg-gray-200"><i
+                                                                class="fa-solid fa-car"></i></button>
+                                                        <button
+                                                            class="btn btn-link btn-sm pl-1 font-weight-normal"><label
+                                                                for="">1 Bathroom</label></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+
+                            <div class="col-md-12 col-lg-6  mb-3">
+                                <div class="card shadow mb-4 h-100">
+
+                                    <div
+                                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                        <h6 class="m-0 font-weight-bold ">Announcements</h6>
+                                        <div class="dropdown no-arrow">
+
+                                            <a class=" btn btn-link btn-sm text-info  text-decoration-none" href="#">
+                                                View All<i class="fa-solid fa-caret-right ml-2"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <div class="row g-0">
+                                            <div class="col-2 col-sm-2 col-3 ">
+                                                <div class="calendar-box justify-content-center">
+                                                    <div class="align-self-center"> FEB<br>22</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 pl-0 col-sm-10 col-9">
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <h5 class="card-title ">Dream Program</h5>
+                                                    <a class=" btn btn-link btn-sm text-info  text-decoration-none"
+                                                        href="#">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+
+                                                <p class="card-text"><small>A new promotion has been released today! For
+                                                        more details, go..</small></p>
+
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row g-0">
+                                            <div class="col-2 col-sm-2 col-3 ">
+                                                <div class="calendar-box justify-content-center">
+                                                    <div class="align-self-center"> FEB<br>22</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 pl-0 col-sm-10 col-9">
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <h5 class="card-title ">NEC Aspire System</h5>
+                                                    <a class=" btn btn-link btn-sm text-info  text-decoration-none"
+                                                        href="#">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+
+                                                <p class="card-text"><small>Auction on NEC ASPIRE SYSTEM is ending
+                                                        soon</small></p>
+
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row g-0">
+                                            <div class="col-2 col-sm-2 col-3 ">
+                                                <div class="calendar-box justify-content-center">
+                                                    <div class="align-self-center"> FEB<br>22</div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 pl-0 col-sm-10 col-9">
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <h5 class="card-title ">Dream Program</h5>
+                                                    <a class=" btn btn-link btn-sm text-info  text-decoration-none"
+                                                        href="#">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+
+                                                <p class="card-text"><small>A new promotion has been released today! For
+                                                        more details, go..</small></p>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 mb-3">
+                                <div class="card shadow mb-4 h-100">
+
+                                    <div
+                                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                        <h6 class="m-0 font-weight-bold ">Top Dealers</h6>
+                                        <div class="dropdown no-arrow">
+
+                                            <a class=" btn btn-link btn-sm text-info  text-decoration-none" href="#">
+                                                View All<i class="fa-solid fa-caret-right ml-2"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <div class="row g-0">
+                                            <div class="col-2 col-sm-2 col-3">
+                                                <div class="organization-box justify-content-center">
+                                                    <img class="align-self-center" src="./assets/images/tcs.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 pl-0 col-sm-10 col-9">
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <h5 class="card-title ">TCS</h5>
+                                                    <a class=" btn btn-link btn-sm text-info  text-decoration-none"
+                                                        href="#">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+
+                                                <p class="card-text"><small>Quote Count: 3</small></p>
+
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row g-0">
+                                            <div class="col-2 col-sm-2 col-3">
+                                                <div class="organization-box justify-content-center">
+                                                    <img class="align-self-center" src="./assets/images/tcs.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 pl-0 col-sm-10 col-9">
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <h5 class="card-title ">TCS</h5>
+                                                    <a class=" btn btn-link btn-sm text-info  text-decoration-none"
+                                                        href="#">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+
+                                                <p class="card-text"><small>Quote Count: 3</small></p>
+
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row g-0">
+                                            <div class="col-2 col-sm-2 col-3">
+                                                <div class="organization-box justify-content-center">
+                                                    <img class="align-self-center" src="./assets/images/tcs.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 pl-0 col-sm-10 col-9">
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <h5 class="card-title ">TCS</h5>
+                                                    <a class=" btn btn-link btn-sm text-info  text-decoration-none"
+                                                        href="#">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+
+                                                <p class="card-text"><small>Quote Count: 3</small></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+    <script src="./assets/scripts/jquery/jquery.min.js"></script>
+    <script src="./assets/scripts/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+
+        (function ($) {
+            "use strict"; 
+
+            // Toggle the side navigation
+            $("#sidebarToggle, #sidebarToggleTop").on('click', function (e) {
+                $("body").toggleClass("sidebar-toggled");
+                $(".sidebar").toggleClass("toggled");
+                if ($(".sidebar").hasClass("toggled")) {
+                    $('.sidebar .collapse').collapse('hide');
+                };
+            });
+
+
+            $(window).resize(function () {
+                if ($(window).width() < 768) {
+                    $('.sidebar .collapse').collapse('hide');
+                };
+
+
+                if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {
+                    $("body").addClass("sidebar-toggled");
+                    $(".sidebar").addClass("toggled");
+                    $('.sidebar .collapse').collapse('hide');
+                };
+            });
+
+            // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
+            $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function (e) {
+                if ($(window).width() > 768) {
+                    var e0 = e.originalEvent,
+                        delta = e0.wheelDelta || -e0.detail;
+                    this.scrollTop += (delta < 0 ? 1 : -1) * 30;
+                    e.preventDefault();
+                }
+            });
+
+            // Scroll to top button appear
+            $(document).on('scroll', function () {
+                var scrollDistance = $(this).scrollTop();
+                if (scrollDistance > 100) {
+                    $('.scroll-to-top').fadeIn();
+                } else {
+                    $('.scroll-to-top').fadeOut();
+                }
+            });
+
+            // Smooth scrolling using jQuery easing
+            $(document).on('click', 'a.scroll-to-top', function (e) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: ($($anchor.attr('href')).offset().top)
+                }, 1000, 'easeInOutExpo');
+                e.preventDefault();
+            });
+
+        })(jQuery); // End of use strict
+
+    </script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "50vw";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          
+          var elements = document.getElementsByClassName("offcanvas-backdrop");
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = "block";
+          }
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.body.style.backgroundColor = "white";
+          
+          var elements = document.getElementsByClassName("offcanvas-backdrop");
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = "none";
+          }
+        }
+        </script>
+
+
+</body>
+
+</html>

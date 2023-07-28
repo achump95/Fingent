@@ -1,0 +1,12 @@
+body{
+    color: $black;
+    transition: background-color .5s;
+}
+.btn:focus, .btn.focus{
+    box-shadow: none;
+}
+label{
+    font-size: 13px;
+    color: $dark;
+    margin-bottom: 0.2rem;
+}

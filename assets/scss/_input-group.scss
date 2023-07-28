@@ -1,0 +1,10 @@
+.input-group-text{
+    font-size: 14px;
+    color: $dark;
+    background-color: $white;
+    padding: 0rem 0.5rem 0rem 1rem;
+}
+.input-group >.form-control{
+    border-left: none;
+    padding-left: 0.5rem;
+}

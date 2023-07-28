@@ -1,0 +1,106 @@
+// Override Bootstrap default variables here
+// Do not edit any of the files in /vendor/bootstrap/scss/!
+
+// Color Variables
+// Bootstrap Color Overrides
+
+$white: #fff !default;
+$gray-100: #f8f9fc !default;
+$gray-200: #eaecf4 !default;
+$gray-300: #dddfeb !default;
+$gray-400: #d1d3e2 !default;
+$gray-500: #b7b9cc !default;
+$gray-600: #858796 !default;
+$gray-700: #6e707e !default;
+$gray-800: #5a5c69 !default;
+$gray-900: #3a3b45 !default;
+$black: #000 !default;
+
+$body-bg:#F5F5F5 !default;
+
+$blue: #04127C !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #db2a38 !default;
+$orange: #eb6b00 !default;
+$yellow: #f6c23e !default;
+$green: #1cc88a !default;
+$teal: #20c9a6 !default;
+$cyan: #36b9cc !default;
+$blue-dark: #000B61 !default;
+$light-bg-shade: #F5F5FF;
+
+$primary: #EB6E00;
+$info: $blue;
+$light: $white;
+$success: #38a013;
+$danger: #db2a38;
+$secondary: #4457E3;
+$dark: #222222;
+// Custom Colors
+
+
+// Set Contrast Threshold
+$yiq-contrasted-threshold: 195 !default;
+
+// Typography
+$body-color: $gray-600 !default;
+$font-family-base: 'Poppins', sans-serif !important;;
+$font-family-heading: 'Poppins', sans-serif !important;
+
+$font-weight-light: 300 !default;
+// $font-weight-base: 400;
+$headings-font-weight: 700 !default;
+
+// Shadows
+$box-shadow-sm: 0 0.125rem 0.25rem 0 rgba($gray-900, .2) !default;
+$box-shadow: 0 0.15rem 1.75rem 0 rgba($gray-900, .15) !default;
+// $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
+
+// Borders Radius
+$border-radius: 0.5rem !default;
+$border-color: #EAEAEA;
+
+// Spacing Variables
+// Change below variable if the height of the navbar changes
+$topbar-base-height: 4.375rem !default;
+// Change below variable to change the width of the sidenav
+$sidebar-base-width: 14rem !default;
+// Change below variable to change the width of the sidenav when collapsed
+$sidebar-collapsed-width: 6.5rem !default;
+
+// Card
+$card-cap-bg: $gray-100 !default;
+$card-border-color: $border-color !default;
+
+// Adjust column spacing for symmetry
+$spacer: 1rem !default;
+$grid-gutter-width: $spacer * 1.5 !default;
+
+// Transitions
+$transition-collapse: height .15s ease !default;
+
+// Dropdowns
+$dropdown-font-size: 0.85rem !default;
+$dropdown-border-color: $border-color !default;
+
+// Images
+$login-image: 'https://source.unsplash.com/K4mSJ7kc0As/600x800' !default;
+$register-image: 'https://source.unsplash.com/Mv9hjnEUHR4/600x800' !default;
+$password-image: 'https://source.unsplash.com/oWTW-jNGl9I/600x800' !default;
+
+/* Navpill */
+$nav-pills-border-radius: $border-radius;
+
+$link-color: $black;
+
+/* Button */
+$input-btn-padding-y-lg:      .8rem !default;
+
+/* Progress */
+$progress-bar-bg:  $success;
+
+/* Input */
+$input-border-color: #696969;
+$h5-font-size: 18px;
